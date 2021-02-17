@@ -7,12 +7,12 @@ module "ec2_cluster" {
   num_suffix_format = var.ec2_num_suffix_format
   instance_count    = var.ec2_count
 
-  ami                    = var.ec2_ami
-  instance_type          = var.ec2_instance_type
-  key_name               = var.ec2_key
-  monitoring             = var.ec2_monitoring
-  vpc_security_group_ids = var.ec2_sgs_ids
-  # vpc_security_group_ids = [var.ec2_sgs_ids, module.security_group.this_security_group_id]
+  ami           = var.ec2_ami
+  instance_type = var.ec2_instance_type
+  key_name      = var.ec2_key
+  monitoring    = var.ec2_monitoring
+  #vpc_security_group_ids = var.ec2_sgs_ids
+  vpc_security_group_ids      = concat([module.security_group.this_security_group_id], var.ec2_sgs_ids)
   subnet_id                   = var.subnet_ids
   associate_public_ip_address = var.ec2_public_ip_address
   root_block_device           = var.ec2_root_block_device
