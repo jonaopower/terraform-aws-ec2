@@ -2,6 +2,14 @@ variable "ec2_prefix" {
   description = "AWS Instance Name Prefix"
 }
 
+variable "ec2_num_suffix" {
+  description = "AWS Instance Name Sufix"
+}
+
+variable "ec2_num_suffix_format" {
+  description = "AWS Instance Sufix Format"
+}
+
 variable "ec2_count" {
   description = "AWS Instance Number to be created"
 }

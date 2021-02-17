@@ -7,7 +7,9 @@ subnet_ids  = "subnet-0bb97f09825816d44"
 
 # EC2 Instance data
 ec2_prefix                  = "Rundeck"
-ec2_count                   = 1
+ec2_num_suffix              = true
+ec2_num_suffix_format       = "-%d"
+ec2_count                   = 3
 ec2_volume_type             = "gp3"
 ec2_ami                     = "ami-0e765cee959bcbfce"
 ec2_instance_type           = "t2.micro"
@@ -33,8 +35,7 @@ sg_description         = "Security Group para Servidor Rundeck"
 
 # Tags
 default_tags = {
-  Produto = "Rundeck AWS - AGIL PRD"
+  Produto = "Rundeck AWS"
   Tribo   = "Producao"
   Squad   = "Devops"
-  Name    = "Rundeck Server"
 }
