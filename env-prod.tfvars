@@ -33,7 +33,7 @@ sg_ingress_rules       = ["http-80-tcp", "all-icmp"]
 sg_egress_rules        = ["all-all"]
 sg_description         = "Security Group para Servidor Rundeck"
 
-# Tags
+# Tags padroes
 default_tags = {
   Produto = "Rundeck AWS"
   Tribo   = "Producao"
