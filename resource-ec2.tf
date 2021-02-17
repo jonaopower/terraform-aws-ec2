@@ -32,7 +32,5 @@ module "ec2_cluster" {
       Name = "Disco-${var.ec2_prefix}"
     },
   )
-  #tags        = var.default_tags
-  #volume_tags = var.default_tags
 
 }
