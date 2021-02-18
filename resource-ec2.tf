@@ -17,19 +17,21 @@ module "ec2_cluster" {
   root_block_device           = var.ec2_root_block_device
 
   # Define tags para ec2
-  tags = merge(
-    var.default_tags,
-    {
-      Name = var.ec2_prefix
-    },
-  )
+  tags = var.default_tags
+  #tags = merge(
+  #  var.default_tags,
+  #  {
+  #    Name = "${var.ec2_prefix}-${count.index}"
+  #  },
+  #)
 
   # Define tags para volumes disks da instancias ec2
-  volume_tags = merge(
-    var.default_tags,
-    {
-      Name = "Disco-${var.ec2_prefix}"
-    },
-  )
+  volume_tags = var.default_tags
+  #volume_tags = merge(
+  #  var.default_tags,
+  #  {
+  #    Name = "Disco-${var.ec2_prefix}"
+  #  },
+  #)
 
 }
