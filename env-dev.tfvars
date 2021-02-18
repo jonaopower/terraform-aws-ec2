@@ -2,8 +2,8 @@
 vpc_id      = "vpc-03d9702a457018484"
 aws_region  = "sa-east-1"
 aws_profile = "jonas-aws"
-subnet_ids  = "subnet-0bb97f09825816d44"
-#subnet_ids  = ["subnet-0bb97f09825816d44", "subnet-09d549e3b568c39c5"]
+#subnet_ids  = "subnet-0bb97f09825816d44"
+subnet_ids  = ["subnet-0bb97f09825816d44", "subnet-09d549e3b568c39c5"]
 
 # EC2 Instance data
 ec2_prefix                  = "Rundeck"

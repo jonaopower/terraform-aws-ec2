@@ -14,7 +14,7 @@ module "ec2_cluster" {
   key_name                    = var.ec2_key
   monitoring                  = var.ec2_monitoring
   vpc_security_group_ids      = concat([module.security_group.this_security_group_id], var.ec2_sgs_ids)
-  subnet_id                   = var.subnet_ids
+  subnet_ids                  = var.subnet_ids
   associate_public_ip_address = var.ec2_public_ip_address
   root_block_device           = var.ec2_root_block_device
 
