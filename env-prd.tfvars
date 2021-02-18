@@ -36,7 +36,8 @@ sg_description         = "Security Group para Servidor Rundeck"
 
 # Tags padroes
 default_tags = {
-  Produto = "Rundeck AWS"
-  Tribo   = "Producao"
-  Squad   = "Devops"
+  Produto  = "Rundeck AWS"
+  Tribo    = "Producao"
+  Squad    = "Devops"
+  Ambiente = "Prod"
 }
