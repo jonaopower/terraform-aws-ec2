@@ -1,6 +1,6 @@
 module "ec2_cluster" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 2.0"
+  version = "~> 2.16"
 
   name              = var.ec2_prefix
   use_num_suffix    = var.ec2_num_suffix
