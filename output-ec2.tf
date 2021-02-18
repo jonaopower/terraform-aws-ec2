@@ -1,3 +1,5 @@
+# Documentacao outputs do modulo: https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest?tab=outputs
+
 output "azs" {
   description = "List of IDs of AZs"
   value       = module.ec2_cluster.availability_zone

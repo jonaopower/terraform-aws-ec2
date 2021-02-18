@@ -1,3 +1,5 @@
+# Documentacao do modulo: https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest
+
 module "ec2_cluster" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 2.16"
